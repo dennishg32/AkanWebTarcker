@@ -37,3 +37,12 @@ body {
     color: #130f40;
     margin: 5px 0;
 }
+
+.bd_form input {
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    boder: 1px solid silver;
+}
