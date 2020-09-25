@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -44,5 +45,110 @@ body {
     padding: 0 5px;
     font-size: 18px;
     outline: none;
-    boder: 1px solid silver;
+    border: 1px solid silver;
+}
+
+.bd_form .font3,
+.font2 {
+    margin-top: 30px;
+}
+
+
+/*
+.bd_form .radio {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.bd_form .radio+.radio {
+    margin-left: 20px;
+}
+
+.bd_form .radio input[type="radio"] {
+    display: none;
+}
+
+.bd_form .radio span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid #00aeef;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 7px;
+}
+
+.bd_form .radio span::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #00aeef;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.bd_form .radio input[type="radio"]:checked ～ span::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+*/
+
+.bd_form .radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.bd_form .rinput {
+    display: none;
+}
+
+.bd_form .rr {
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #dbe4e2;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.bd_form .rr::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #009879;
+}
+
+.bd_form button {
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #1a237e;
+    border-radius: 3px;
+    border: 1px solid #3949ab;
+    transition: 0.5s;
+}
+
+.bd_form button:hover {
+    background: #115511;
 }
