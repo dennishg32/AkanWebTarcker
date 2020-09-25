@@ -11,6 +11,7 @@ body {
     justify-content: center;
     display: flex;
     font-family: "Poppins", sans-serif;
+    height: 160vh;
 }
 
 .container {
@@ -53,63 +54,12 @@ body {
     margin-top: 30px;
 }
 
-
-/*
-.bd_form .radio {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: 500;
-    text-transform: capitalize;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    padding-left: 30px;
-    cursor: pointer;
-}
-
-.bd_form .radio+.radio {
-    margin-left: 20px;
-}
-
-.bd_form .radio input[type="radio"] {
-    display: none;
-}
-
-.bd_form .radio span {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 3px solid #00aeef;
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 7px;
-}
-
-.bd_form .radio span::after {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background: #00aeef;
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    transition: 300ms ease-in-out 0s;
-}
-
-.bd_form .radio input[type="radio"]:checked ～ span::after {
-    transform: translate(-50%, -50%) scale(1);
-}
-*/
-
 .bd_form .radio {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
     margin-right: 10px;
+    margin-top: 20px;
 }
 
 .bd_form .rinput {
@@ -119,7 +69,7 @@ body {
 .bd_form .rr {
     width: 1.25em;
     height: 1.25em;
-    border: 2px solid #dbe4e2;
+    border: 2px solid #00aeef;
     border-radius: 50%;
     margin-right: 10px;
     box-sizing: border-box;
@@ -131,7 +81,14 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    background: #009879;
+    background: #000c0a;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+
+.bd_form .rinput:checked+.rr::after {
+    transform: scale(1);
 }
 
 .bd_form button {
@@ -151,4 +108,18 @@ body {
 
 .bd_form button:hover {
     background: #115511;
+}
+
+.bd_form #year_error,
+.bd_form #day_error,
+.bd_form #month_error,
+.bd_form #gender_error {
+    margin-top: 5px;
+    font-size: 18px;
+    width: 345px;
+    color: #c62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 1px solid #ef9a9a;
+    display: none;
 }

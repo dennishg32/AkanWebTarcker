@@ -12,18 +12,18 @@
 <body>
     <div class="container">
         <h1 class="label">Track your Akan Name</h1>
-        <form class="bd_form" action="" method="post">
+        <form class="bd_form" action="" method="post" name="form">
 
             <div class="font">Enter Your Day:</div>
-            <input type="number" name="" value="">
+            <input type="number" name="day" value="">
             <div id="day_error">Please fill your day</div>
 
             <div class="font2">Enter Your Month:</div>
-            <input type="number" name="" value="">
+            <input type="number" name="month" value="">
             <div id="month_error">Please fill your month</div>
 
             <div class="font3">Enter Your Year:</div>
-            <input type="number" name="" value="">
+            <input type="number" name="year" value="">
             <div id="year_error">Please fill your year</div>
 
             <label class="radio">
@@ -39,6 +39,7 @@
                     <div class="rr"></div>
                     Female
                 </label>
+            <div id="gender_error">Please fill your Gender</div>
 
             <button type="submit">Check</button>
         </form>
