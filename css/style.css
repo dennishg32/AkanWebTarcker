@@ -11,7 +11,6 @@ body {
     justify-content: center;
     display: flex;
     font-family: "Poppins", sans-serif;
-    height: 160vh;
 }
 
 .container {
@@ -122,4 +121,13 @@ body {
     text-align: center;
     border-radius: 1px solid #ef9a9a;
     display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .social-panel-container.visible {
+        transform: translateX(0px);
+    }
+    .floating-btn {
+        right: 10px;
+    }
 }
