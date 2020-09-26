@@ -28,9 +28,13 @@ function validate() {
     var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     if (day == 1 || month > 2) {
         if (day > monthDays[month - 1]) {
-            console.log("Invalid date format!");
+            console.log("Invalid date!");
             return false;
         }
+    }
+    if (month <= 0 || month > 12) {
+        console.log("invalid month");
+        return false;
     }
     if (month == 2) {
         var lyear = false;
@@ -49,6 +53,12 @@ function validate() {
 
     arrMale = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     arrFemale = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+    //calculations
+
+    var cc = (year - 1) / 100 + 1;
+    var birthday =
+        (cc / 4 - 2 * cc - 1 + (5 * year) / 4 + (26 * (month + 1)) / 10 + day) % 7;
 
     //console.log(genderFemale);
 
