@@ -17,8 +17,6 @@ header img {
 
 .menu {
     background: #2c3e50;
-    top: 0;
-    position: sticky;
 }
 
 .menu h1 {
@@ -179,6 +177,14 @@ h2 {
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin-top: 3%;
+}
+
+.last {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    width: 40%;
 }
 
 @media screen and (max-width: 480px) {
