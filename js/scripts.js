@@ -18,13 +18,34 @@ function validate() {
     var month = parseInt(document.getElementById("month").value);
     var year = parseInt(document.getElementById("year").value);
     var gender = document.querySelector('input[name="gender"]:checked').value;
-    //var genderMale = toString(document.getElementById("gender").checked.value);
-    //var genderFemale = document.getElementById("genFemale").value;
 
     console.log(day);
     console.log(month);
     console.log(year);
     console.log(gender);
+
+    // Create list of days of a month [assume there is no leap year by default]
+    var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    if (day == 1 || month > 2) {
+        if (day > monthDays[month - 1]) {
+            console.log("Invalid date format!");
+            return false;
+        }
+    }
+    if (month == 2) {
+        var lyear = false;
+        if ((!(year % 4) && year % 100) || !(year % 400)) {
+            lyear = true;
+        }
+        if (lyear == false && day >= 29) {
+            console.log("Invalid date!");
+            return false;
+        }
+        if (lyear == true && day > 29) {
+            console.log("Invalid date!");
+            return false;
+        }
+    }
 
     arrMale = ["Kwasi", "Kwado", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     arrFemale = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
