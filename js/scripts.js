@@ -22,18 +22,23 @@ function validate() {
     if (day == 1 || month > 2) {
         if (day > monthDays[month - 1]) {
             console.log("Invalid date!");
-            /*
-                  day.style.border = "1px solid #red";
-                  day_error.style.display = "block";*/
             return false;
         }
     }
     if (month <= 0 || month > 12) {
         console.log("invalid month");
         /*
-            month.style.border = "1px solid red";
-            month_error.style.display = "block";
-            */
+                    month.style.border = "1px solid red";
+                    month_error.style.display = "block";
+                    */
+        return false;
+    }
+    if (day <= 0 || day > 31) {
+        console.log("invalid day");
+        /*
+                       day.style.border = "1px solid #red";
+                       day_error.style.display = "block";
+                 */
         return false;
     }
     if (month == 2) {

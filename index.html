@@ -5,53 +5,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Track Akan Name</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script defer src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <section class="desc">
-        <h2>Description on how this Web works</h2>
-    </section>
-
-    <div class="container">
-        <h1 class="label">Track Akan Name</h1>
-
-        <form class="bd_form" id="form" onsubmit="event.preventDefault()">
-            <div class="font">Enter Your Day:</div>
-            <input id="day" autocomplete="off" type="number" name="day" value="" placeholder="DD">
-            <div id="day_error">Please fill your day</div>
-
-            <div class="font2">Enter Your Month:</div>
-            <input id="month" type="number" name="month" value="" placeholder="MM">
-            <div id="month_error">Please fill your month</div>
-
-            <div class="font3">Enter Your Year:</div>
-            <input id="year" type="number" name="year" value="" placeholder="YYYY">
-            <div id="year_error">Please fill your year</div>
-
-            <label class="radio">
-                    <input id="gender" type="radio" name="gender" value="male"
-                        class="rinput">
-                    <div class="rr"></div>
-                    Male
-                </label>
-
-            <label class="radio">
-                    <input id="gender" type="radio" name="gender"
-                        value="female"
-                        class="rinput">
-                    <div class="rr"></div>
-                    Female
-                </label>
-            <div id="gender_error">Please fill your Gender</div>
-
-            <button onclick="validate()" onsubmit="event.preventDefault()" type="submit">Check</button>
-
-            <p><span>The Akan name is: </span><label id="name"></label></p>
-            <p><span>Day of the week you were born is: </span><label id="display"></label></p>
-        </form>
+    <div class="menu">
+        <header>
+            <img src="images/hglogo.jpg" />
+            <img src="images/giphy.gif" width="50px" />
+            <h1>WELCOME TO AKAN NAME TRACKER</h1>
+        </header>
     </div>
+    <div class="container">
+        <h2>Description on how this Web works</h2>
+        <section class="desc">
+            <p>
+                Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. GOAL The goal of this week's Independent Project
+                is to help us practice and better understand the concepts that we have covered throughout this week. These include working with data types, Array, writing functions, control flow, and operators. Overall Description For this week's Independent
+                Project, you will be required to build a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture.
+                Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
+            </p>
+
+            <div class="container1">
+                <h1 class="label">Track Akan Name</h1>
+
+                <form class="bd_form" id="form" onsubmit="event.preventDefault()">
+                    <div class="font">Enter Your Day:</div>
+                    <input id="day" autocomplete="off" type="number" name="day" value="" placeholder="DD" />
+                    <div id="day_error">Please fill your day</div>
+
+                    <div class="font2">Enter Your Month:</div>
+                    <input id="month" type="number" name="month" value="" placeholder="MM" />
+                    <div id="month_error">Please fill your month</div>
+
+                    <div class="font3">Enter Your Year:</div>
+                    <input id="year" type="number" name="year" value="" placeholder="YYYY" />
+                    <div id="year_error">Please fill your year</div>
+
+                    <label class="radio">
+                            <input
+                                id="gender"
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                class="rinput"
+                                />
+                            <div class="rr"></div>
+                            Male
+                        </label>
+
+                    <label class="radio">
+                            <input
+                                id="gender"
+                                type="radio"
+                                name="gender"
+                                value="female"
+                                class="rinput"
+                                />
+                            <div class="rr"></div>
+                            Female
+                        </label>
+                    <div id="gender_error">Please fill your Gender</div>
+                    <button onclick="validate()" onsubmit="event.preventDefault()" type="submit">
+                            Check
+                        </button>
+                    <p><span>The Akan name is: </span><label id="name"></label></p>
+                    <p>
+                        <span>Day of the week you were born is: </span><label id="display"></label>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </div>
+    <section class="sec2"></section>
+
 </body>
 
 </html>
