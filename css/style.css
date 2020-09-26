@@ -123,6 +123,10 @@ body {
     display: none;
 }
 
+.section {
+    min-height: 40vh;
+}
+
 @media screen and (max-width: 480px) {
     .social-panel-container.visible {
         transform: translateX(0px);
