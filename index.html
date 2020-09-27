@@ -24,6 +24,7 @@
     </section>
     <div class="jumbotron">
         <h2>Description Below and Form</h2>
+        <h5>Want to know Akan name? Please fill the Form.</h5>
     </div>
     <div class="container">
 
@@ -31,63 +32,60 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-
+                        <div class="page-header">
+                            <h2>Description</h2>
+                        </div>
                         <div class="desc">
-                            <p><span class="border">Akan names are derived from Ghanian culture. Frequently in Ghana,
-                                    children are given their first name as a 'day name' which corresponds to the day in
-                                    the week they were born. Here are Ghanian day names. GOAL The goal of this week's
-                                    Independent Project
-                                    is to help us practice and better understand the concepts that we have covered
-                                    throughout this week. These include working with data types, Array, writing
-                                    functions, control flow, and operators. Overall Description For
-                                    this week's Independent Project, you will be required to build a web application
-                                    that takes a user's birthday and calculates the day of the week they were born and
-                                    then depending on their gender outputs their Akan Name.
-                                    Akan names are derived from Ghanian culture. Frequently in Ghana, children are given
-                                    their first name as a 'day name' which corresponds to the day in the week they were
-                                    born. Here are Ghanian day names.
-                                </span>
-                            </p>
+                            <p><span>This a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.<br><br>
+                                Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.<br><br>
+                                Most people do know when their birthdays are, but some might not know what day of the week they were born. 
+                                Luckily for us, there are ways to calculate the day of the week from a specific date using the form.</span></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card">
-                    <div class="container1">
-                        <h1 class="label">Track Akan Name</h1>
+                    <div class="card-body">
+                        <div class="page-header">
+                            <h2>Form to Fill</h2>
+                        </div>
+                        <div class="container1">
+                            <h1 class="label">Track Akan Name</h1>
 
-                        <form class="bd_form" id="form" onsubmit="event.preventDefault()">
-                            <div class="font">Enter Your Day:</div>
-                            <input id="day" autocomplete="off" type="number" name="day" value="" placeholder="DD" />
-                            <div id="day_error">Please fill your day</div>
-                            <div class="font2">Enter Your Month:</div>
-                            <input id="month" type="number" name="month" value="" placeholder="MM" />
-                            <div id="month_error">Please fill your month
-                            </div>
-                            <div class="font3">Enter Your Year:</div>
-                            <input id="year" type="number" name="year" value="" placeholder="YYYY" />
-                            <div id="year_error">Please fill your year
-                            </div>
-                            <label class="radio">
+                            <form class="bd_form" id="form" onsubmit="event.preventDefault()">
+                                <div class="font">Enter Your Day:</div>
+                                <input id="day" autocomplete="off" type="number" name="day" value="" placeholder="DD" />
+                                <div id="day_error">Please fill your day</div>
+                                <div class="font2">Enter Your Month:</div>
+                                <input id="month" type="number" name="month" value="" placeholder="MM" />
+                                <div id="month_error">Please fill your month
+                                </div>
+                                <div class="font3">Enter Your Year:</div>
+                                <input id="year" type="number" name="year" value="" placeholder="YYYY" />
+                                <div id="year_error">Please fill your year
+                                </div>
+                                <label class="radio">
                                 <input id="gender" type="radio" name="gender" value="male" class="rinput" />
                                 <div class="rr"></div>
                                 Male
                             </label>
 
-                            <label class="radio">
+                                <label class="radio">
                                 <input id="gender" type="radio" name="gender" value="female" class="rinput" />
                                 <div class="rr"></div>
                                 Female
                             </label>
-                            <div id="gender_error">Please fill your Gender
-                            </div>
-                            <button onclick="validate()" onsubmit="event.preventDefault()" type="submit">
+                                <div id="gender_error">Please fill your Gender
+                                </div>
+                                <button onclick="validate()" onsubmit="event.preventDefault()" type="submit">
                                 Check
                             </button>
-                            <p><span>The Akan name is: </span><label id="name"></label></p>
-                            <p><span>Day of the week you were born is:</span><label id="display"></label></p>
-                        </form>
+                                <p><span>Your bornDay was:</span><label id="display"></label></p>
+                                <p><span>Your Akan name is:</span><label id="name"></label></p>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,8 +94,16 @@
         </section>
     </div>
     </div>
-    <section class="sec2"></section>
-    <section class="last"></section>
+    <div class="sec2">
+        <div class="last">
+            <div class="blog">
+                <article class="wow" style="visibility: visible; animation-name: fadeIn;">
+                    <h2>Hope you had fun</h2>
+                    <p>Thanks for visiting us. It means a lot having you around.</p>
+                </article>
+            </div>
+        </div>
+    </div>
     <section class="ftr">
         <footer>
             <div class="card-footer">
