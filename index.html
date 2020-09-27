@@ -33,11 +33,20 @@
                     <div class="card-body">
 
                         <div class="desc">
-                            <p><span class="border">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. GOAL The goal of this week's Independent Project
-                                is to help us practice and better understand the concepts that we have covered throughout this week. These include working with data types, Array, writing functions, control flow, and operators. Overall Description For
-                                this week's Independent Project, you will be required to build a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
-                                Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
-                            </span>
+                            <p><span class="border">Akan names are derived from Ghanian culture. Frequently in Ghana,
+                                    children are given their first name as a 'day name' which corresponds to the day in
+                                    the week they were born. Here are Ghanian day names. GOAL The goal of this week's
+                                    Independent Project
+                                    is to help us practice and better understand the concepts that we have covered
+                                    throughout this week. These include working with data types, Array, writing
+                                    functions, control flow, and operators. Overall Description For
+                                    this week's Independent Project, you will be required to build a web application
+                                    that takes a user's birthday and calculates the day of the week they were born and
+                                    then depending on their gender outputs their Akan Name.
+                                    Akan names are derived from Ghanian culture. Frequently in Ghana, children are given
+                                    their first name as a 'day name' which corresponds to the day in the week they were
+                                    born. Here are Ghanian day names.
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -61,33 +70,21 @@
                             <div id="year_error">Please fill your year
                             </div>
                             <label class="radio">
-                                            <input
-                                                id="gender"
-                                                type="radio"
-                                                name="gender"
-                                                value="male"
-                                                class="rinput"
-                                                />
-                                            <div class="rr"></div>
-                                            Male
-                                        </label>
+                                <input id="gender" type="radio" name="gender" value="male" class="rinput" />
+                                <div class="rr"></div>
+                                Male
+                            </label>
 
                             <label class="radio">
-                                            <input
-                                                id="gender"
-                                                type="radio"
-                                                name="gender"
-                                                value="female"
-                                                class="rinput"
-                                                />
-                                            <div class="rr"></div>
-                                            Female
-                                        </label>
+                                <input id="gender" type="radio" name="gender" value="female" class="rinput" />
+                                <div class="rr"></div>
+                                Female
+                            </label>
                             <div id="gender_error">Please fill your Gender
                             </div>
                             <button onclick="validate()" onsubmit="event.preventDefault()" type="submit">
-                                            Check
-                                        </button>
+                                Check
+                            </button>
                             <p><span>The Akan name is: </span><label id="name"></label></p>
                             <p><span>Day of the week you were born is:</span><label id="display"></label></p>
                         </form>
