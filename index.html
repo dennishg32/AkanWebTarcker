@@ -56,43 +56,36 @@
                             <form class="bd_form" id="form" onsubmit="event.preventDefault()">
                                 <div class="font">Enter Your Day:</div>
                                 <input id="day" autocomplete="off" type="number" name="day" value="" placeholder="DD" />
-                                <div id="day_error">Please fill your day</div>
+
                                 <div class="font2">Enter Your Month:</div>
                                 <input id="month" type="number" name="month" value="" placeholder="MM" />
-                                <div id="month_error">Please fill your month
-                                </div>
+
+
                                 <div class="font3">Enter Your Year:</div>
                                 <input id="year" type="number" name="year" value="" placeholder="YYYY" />
-                                <div id="year_error">Please fill your year
-                                </div>
+
+
                                 <label class="radio">
                                 <input id="gender" type="radio" name="gender" value="male" class="rinput" />
                                 <div class="rr"></div>
                                 Male
-                            </label>
-
+                                </label>
                                 <label class="radio">
-                                <input id="gender" type="radio" name="gender" value="female" class="rinput" />
-                                <div class="rr"></div>
-                                Female
-                            </label>
-                                <div id="gender_error">Please fill your Gender
-                                </div>
-                                <button onclick="validate()" onsubmit="event.preventDefault()" type="submit">
-                                Check
-                            </button>
-                                <p><span>Your bornDay was:</span><label id="display"></label></p>
-                                <p><span>Your Akan name is:</span><label id="name"></label></p>
+                                    <input id="gender" type="radio" name="gender" value="female" class="rinput" />
+                                    <div class="rr"></div>
+                                    Female
+                                </label>
 
+                                <button onclick="validate()" onsubmit="event.preventDefault()" type="submit">Check</button>
+                                <p><span>Your bornDay was:</span><label id="res"></label></p>
+                                <p><span>Your Akan name is:</span><label id="name"></label></p>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         </section>
-    </div>
     </div>
     <div class="sec2">
         <div class="last">

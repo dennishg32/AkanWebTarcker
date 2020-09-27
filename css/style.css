@@ -131,20 +131,6 @@ header img {
     background: #115511;
 }
 
-.bd_form #year_error,
-.bd_form #day_error,
-.bd_form #month_error,
-.bd_form #gender_error {
-    margin-top: 5px;
-    font-size: 18px;
-    width: 345px;
-    color: #c62828;
-    background: rgba(255, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 1px solid #ef9a9a;
-    display: none;
-}
-
 .desc {
     width: 600px;
     height: auto;
