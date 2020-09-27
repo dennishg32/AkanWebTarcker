@@ -205,7 +205,7 @@ div {
     max-width: 1170px;
 }
 
-.last .article {
+.last article {
     width: 686px;
     float: left;
     margin: 129px 0 0;
@@ -223,6 +223,13 @@ element.style {
     color: #f3f3f3;
     font-family: proxima_nova_rgbold;
     margin-bottom: 17px;
+    margin: 20px 0 10px;
+    font-weight: 400;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-inline-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
 }
 
 p {
@@ -237,6 +244,8 @@ p {
     color: #f3f3f3;
     font-size: 16px;
     margin-bottom: 30px;
+    margin-left: 7%;
+    margin-top: 30px;
 }
 
 .fadeIn {
@@ -244,7 +253,7 @@ p {
 }
 
 .ftr {
-    margin-top: 100%;
+    margin-top: 10%;
     height: 5vh;
     background-color: black;
     padding: 0 10px;
