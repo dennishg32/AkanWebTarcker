@@ -12,7 +12,7 @@ Here is a working git live page online demo: https://dennishg32.github.io/AkanWe
 
 Currently as you can see there is picture and my names of mine
 
-<img src="" width="auto">
+<img src="https://github.com/dennishg32/AkanWebTarcker/blob/master/images/landingpage.png" width="auto">
 
 ## Built with
 
@@ -70,7 +70,7 @@ end
 
 ## Known Bugs
 
-If you find a bug, kindly open an issue [here](https://github.com/dennishg32/AkanWebTarckert/issues) by including your search and the expected result.
+If you find a bug, kindly open an issue [here](https://github.com/dennishg32/AkanWebTarcker/issues) by including your search and the expected result.
 
 ## Author
 
